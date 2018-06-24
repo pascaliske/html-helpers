@@ -1,84 +1,43 @@
-# TypeScript API Skeleton
+# Angular HTML Helpers
 
-[![Build Status](https://travis-ci.com/pascaliske/typescript-api.svg?branch=master)](https://travis-ci.com/pascaliske/typescript-api) [![Greenkeeper badge](https://badges.greenkeeper.io/pascaliske/typescript-api.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.com/pascaliske/html-helpers.svg?branch=master)](https://travis-ci.com/pascaliske/html-helpers) [![Greenkeeper badge](https://badges.greenkeeper.io/pascaliske/html-helpers.svg)](https://greenkeeper.io/)
 
-## Setup
+## Installation
 
-To install the skeleton use the following commands:
-
-```bash
-$ mkdir -p my-api
-$ cd my-api
-$ git clone https://github.com/pascaliske/typescript-api.git .
-$ yarn install
-```
-
-## Development
-
-Start the server using this command:
+To install the module use the following commands:
 
 ```bash
-$ yarn run start
+$ yarn add @pascaliske/html-helpers
 ```
 
-For using the built in file watch you can also start the server using this command:
+## Usage
 
-```bash
-$ yarn run watch
-```
+### CSS modifier classes
 
-To execute the tests run this command:
-
-```bash
-$ yarn run test
-```
-
-### Controllers
-
-You can write controllers the following way:
+In your `TS` code:
 
 ```typescript
-import { Service } from 'typedi'
-import { JsonController, Get } from 'routing-controllers'
-
-/**
- * Creates the controller as an dependency injected service
- */
-@Service()
-@JsonController('/status')
-export class UserController {
-    /**
-     * Defines an endpoint for "GET /api/status"
-     */
-    @Get('/')
-    public async createUser() {
-        return 'success'
+@Component({
+    selector: 'cmp-section',
+    templateUrl: './section.component.html',
+    styleUrls: ['./section.component.scss'],
+})
+export class SectionComponent implements OnInit {
+    public classes(namespace: string): string {
+        return modifiers(namespace, {
+            foo: true,
+            bar: false,
+            baz: true,
+        })
     }
 }
 ```
 
-### Tests
+In your `HTML` code:
 
-You can write controllers the following way:
-
-```typescript
-import test from 'ava'
-import { factory } from '../../index.test'
-
-test('GET /', async t => {
-    // this one is important for usage with supertest
-    t.plan(2)
-
-    // creates a server instance for access with supertest lib
-    const server = await factory()
-    const response = await server.get('/api/status')
-
-    t.is(response.status, 200)
-    t.deepEqual(response.body, {
-        data: 'success',
-        status: 200,
-    })
-})
+```html
+<!-- className: cmp-demo--foo cmp-demo--baz -->
+<div [className]="classes('cmp-section')"></div>
 ```
 
 ## License
