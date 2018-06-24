@@ -1,0 +1,49 @@
+{
+  "name": "@pascaliske/html-helpers",
+  "description": "Collection of helper functions for HTML.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Pascal Iske",
+    "email": "info@pascal-iske.de",
+    "url": "https://pascal-iske.de"
+  },
+  "repository": {
+    "url": "https://github.com/pascaliske/html-helpers.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/pascaliske/html-helpers/issues"
+  },
+  "main": "dist/index.js",
+  "typings": "typings/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "nodemon --exec \"rm -rf dist typings && yarn run build\" --watch src --ext ts",
+    "lint": "tslint -p tsconfig.json --fix",
+    "test": "ava tests/**/*.test.js",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "tslint -p tsconfig.json --fix",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "classnames": "^2.2.6"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.4",
+    "ava": "^0.25.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "nodemon": "^1.17.5",
+    "prettier": "^1.13.5",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "^2.9.2"
+  }
+}
