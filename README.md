@@ -12,11 +12,13 @@ $ yarn add @pascaliske/html-helpers
 
 ## Usage
 
-### CSS modifier classes
+### CSS modifier classes with namespace
 
 In your `TS` code:
 
 ```typescript
+import { modifiers } from '@pascaliske/html-helpers'
+
 @Component({
     selector: 'cmp-section',
     templateUrl: './section.component.html',
@@ -36,8 +38,38 @@ export class SectionComponent implements OnInit {
 In your `HTML` code:
 
 ```html
-<!-- className: cmp-demo--foo cmp-demo--baz -->
+<!-- className: "cmp-section cmp-section--foo cmp-section--baz" -->
 <div [className]="classes('cmp-section')"></div>
+```
+
+### CSS modifier classes without namespace
+
+In your `TS` code:
+
+```typescript
+import { modifiers } from '@pascaliske/html-helpers'
+
+@Component({
+    selector: 'cmp-section',
+    templateUrl: './section.component.html',
+    styleUrls: ['./section.component.scss'],
+})
+export class SectionComponent implements OnInit {
+    public get classes(): string {
+        return modifiers({
+            foo: true,
+            bar: false,
+            baz: true,
+        })
+    }
+}
+```
+
+In your `HTML` code:
+
+```html
+<!-- className: foo baz -->
+<div [className]="classes"></div>
 ```
 
 ## License
