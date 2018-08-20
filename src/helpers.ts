@@ -1,7 +1,6 @@
 import * as classNames from 'classnames'
-import { ClassesMap } from './typings'
 
-export function namespace(prefix: string, map: ClassesMap): string {
+export function namespace(prefix: string, map: object): string {
     const result = {}
 
     for (const modifier in map) {
@@ -13,7 +12,7 @@ export function namespace(prefix: string, map: ClassesMap): string {
     return classNames(prefix, result)
 }
 
-export function themesToMap(themes: string): ClassesMap {
+export function stringToMap(themes: string): object {
     const reducer = (prev, curr) => ({ ...prev, [curr]: true })
 
     return themes

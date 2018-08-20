@@ -1,6 +1,9 @@
 import * as classNames from 'classnames'
-import { namespace, themesToMap } from './helpers'
-import { ClassesMap } from './typings'
+import { namespace, stringToMap } from './helpers'
+
+export interface ClassesMap {
+    [key: string]: boolean
+}
 
 export function modifiers(map: ClassesMap): string
 export function modifiers(namespace: string, map: ClassesMap): string
@@ -23,7 +26,7 @@ export function modifiers(
     }
 
     return namespace(namespaceOrMap, {
-        ...themesToMap(themesOrMap),
+        ...stringToMap(themesOrMap),
         ...map,
     })
 }
