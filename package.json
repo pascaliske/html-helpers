@@ -1,7 +1,7 @@
 {
   "name": "@pascaliske/html-helpers",
   "description": "Collection of helper functions for HTML.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
   "author": {
     "name": "Pascal Iske",
@@ -22,6 +22,7 @@
     "watch": "nodemon --exec \"rm -rf dist typings && yarn run build\" --watch src --ext ts",
     "lint": "tslint -p tsconfig.json --fix",
     "test": "ava tests/**/*.test.js",
+    "check": "snyk test",
     "format": "prettier --write \"src/**/*.ts\"",
     "precommit": "lint-staged"
   },
@@ -42,6 +43,7 @@
     "lint-staged": "^7.2.0",
     "nodemon": "^1.17.5",
     "prettier": "^1.13.5",
+    "snyk": "^1.89.1",
     "tslint": "^5.10.0",
     "tslint-config-prettier": "^1.13.0",
     "typescript": "^2.9.2"
