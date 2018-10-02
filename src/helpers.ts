@@ -12,7 +12,7 @@ export function namespace(prefix: string, map: object): string {
     return classNames(prefix, result)
 }
 
-export function stringToMap(themes: string): object {
+export function stringToMap(themes: string = ''): object {
     const reducer = (prev, curr) => ({ ...prev, [curr]: true })
 
     return themes

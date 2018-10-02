@@ -25,8 +25,5 @@ export function modifiers(
         return namespace(namespaceOrMap, themesOrMap)
     }
 
-    return namespace(namespaceOrMap, {
-        ...stringToMap(themesOrMap),
-        ...map,
-    })
+    return namespace(namespaceOrMap, { ...stringToMap(themesOrMap), ...map })
 }
