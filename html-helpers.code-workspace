@@ -9,6 +9,11 @@
         "editor.formatOnType": true,
         "editor.formatOnPaste": true,
         "tslint.autoFixOnSave": true,
+        "[yaml]": {
+            "editor.formatOnSave": false,
+            "editor.formatOnType": false,
+            "editor.formatOnPaste": false
+        },
         "[json]": {
             "editor.formatOnSave": false,
             "editor.formatOnType": false,

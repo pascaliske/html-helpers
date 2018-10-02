@@ -41,6 +41,28 @@ test('return modifiers with theme string and classes map', async t => {
     t.is(result, expected)
 })
 
+test('return modifiers with empty theme string and classes map', async t => {
+    const expected = 'cmp-demo cmp-demo--foo cmp-demo--baz'
+    const result = exports.modifiers('cmp-demo', '', {
+        foo: true,
+        bar: false,
+        baz: true
+    })
+
+    t.is(result, expected)
+})
+
+test('return modifiers with undefined theme string and classes map', async t => {
+    const expected = 'cmp-demo cmp-demo--foo cmp-demo--baz'
+    const result = exports.modifiers('cmp-demo', undefined, {
+        foo: true,
+        bar: false,
+        baz: true
+    })
+
+    t.is(result, expected)
+})
+
 test('return modifiers with theme string but without classes map', async t => {
     const expected = 'cmp-demo cmp-demo--primary cmp-demo--full-width'
     const result = exports.modifiers('cmp-demo', 'primary,full-width')
