@@ -29,6 +29,10 @@ export function namespace(prefix: string, map: ClassesMap): string {
 export function stringToMap(themes: string = ''): ClassesMap {
     const reducer = (prev, curr) => ({ ...prev, [curr]: true })
 
+    if (themes === '') {
+        return {}
+    }
+
     return themes
         .replace(/ +/g, '')
         .split(',')
