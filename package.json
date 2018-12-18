@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@types/classnames": "^2.2.6",
-    "ava": "^0.25.0",
+    "ava": "^1.0.1",
     "husky": "^1.1.0",
     "lint-staged": "^8.0.0",
     "nodemon": "^1.18.4",
