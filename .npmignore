@@ -1,8 +1,12 @@
 src
 tests
+.nyc_output
 .editorconfig
+.huskyrc
+.lintstagedrc
 .prettierrc
+.snyk
+.travis.yml
 *.code-*
-*.yml
 *.json
 *.lock

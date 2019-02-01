@@ -6,6 +6,7 @@ node_modules
 
 # misc
 typings
+.nyc_output
 npm-debug.log
 yarn-error.log
 

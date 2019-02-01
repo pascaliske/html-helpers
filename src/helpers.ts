@@ -27,7 +27,7 @@ export function namespace(prefix: string, map: ClassesMap): string {
  * @returns A class name map.
  */
 export function stringToMap(themes: string = ''): ClassesMap {
-    const reducer = (prev, curr) => ({ ...prev, [curr]: true })
+    const reducer = (prev: any, curr: string) => ({ ...prev, [curr]: true })
 
     if (themes === '') {
         return {}
