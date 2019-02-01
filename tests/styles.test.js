@@ -1,19 +1,19 @@
 import test from 'ava'
-import * as exports from '../dist'
+import { modifiers } from '../dist'
 
 test('return empty space', async t => {
     const expected = ''
-    const result = exports.modifiers()
+    const result = modifiers()
 
     t.is(result, expected)
 })
 
 test('return modifiers with namespace', async t => {
     const expected = 'cmp-demo cmp-demo--foo cmp-demo--baz'
-    const result = exports.modifiers('cmp-demo', {
+    const result = modifiers('cmp-demo', {
         foo: true,
         bar: false,
-        baz: true
+        baz: true,
     })
 
     t.is(result, expected)
@@ -21,10 +21,10 @@ test('return modifiers with namespace', async t => {
 
 test('return modifiers without namespace', async t => {
     const expected = 'foo baz'
-    const result = exports.modifiers({
+    const result = modifiers({
         foo: true,
         bar: false,
-        baz: true
+        baz: true,
     })
 
     t.is(result, expected)
@@ -32,10 +32,10 @@ test('return modifiers without namespace', async t => {
 
 test('return modifiers with theme string and classes map', async t => {
     const expected = 'cmp-demo cmp-demo--primary cmp-demo--full-width cmp-demo--foo cmp-demo--baz'
-    const result = exports.modifiers('cmp-demo', 'primary,full-width', {
+    const result = modifiers('cmp-demo', 'primary,full-width', {
         foo: true,
         bar: false,
-        baz: true
+        baz: true,
     })
 
     t.is(result, expected)
@@ -43,10 +43,10 @@ test('return modifiers with theme string and classes map', async t => {
 
 test('return modifiers with empty theme string and classes map', async t => {
     const expected = 'cmp-demo cmp-demo--foo cmp-demo--baz'
-    const result = exports.modifiers('cmp-demo', '', {
+    const result = modifiers('cmp-demo', '', {
         foo: true,
         bar: false,
-        baz: true
+        baz: true,
     })
 
     t.is(result, expected)
@@ -54,10 +54,10 @@ test('return modifiers with empty theme string and classes map', async t => {
 
 test('return modifiers with undefined theme string and classes map', async t => {
     const expected = 'cmp-demo cmp-demo--foo cmp-demo--baz'
-    const result = exports.modifiers('cmp-demo', undefined, {
+    const result = modifiers('cmp-demo', undefined, {
         foo: true,
         bar: false,
-        baz: true
+        baz: true,
     })
 
     t.is(result, expected)
@@ -65,7 +65,7 @@ test('return modifiers with undefined theme string and classes map', async t => 
 
 test('return modifiers with theme string but without classes map', async t => {
     const expected = 'cmp-demo cmp-demo--primary cmp-demo--full-width'
-    const result = exports.modifiers('cmp-demo', 'primary,full-width')
+    const result = modifiers('cmp-demo', 'primary,full-width')
 
     t.is(result, expected)
 })
