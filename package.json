@@ -23,7 +23,8 @@
     "lint": "tslint --project tsconfig.json --fix",
     "test": "ava tests/**/*.test.js",
     "check": "snyk test",
-    "format": "prettier --write \"src/**/*.ts\""
+    "format": "prettier --write \"src/**/*.ts\"",
+    "changelog": "standard-changelog --release-count 1"
   },
   "dependencies": {
     "classnames": "^2.2.6"
@@ -38,6 +39,7 @@
     "nodemon": "^1.18.9",
     "prettier": "^1.16.3",
     "snyk": "^1.124.0",
+    "standard-changelog": "^2.0.6",
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.17.0",
     "typescript": "^3.3.1"
