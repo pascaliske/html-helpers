@@ -1,5 +1,4 @@
 import classNames from 'classnames'
-import { ClassesMap } from './styles'
 
 /**
  * Namespaces all properties of the given map.
@@ -8,7 +7,7 @@ import { ClassesMap } from './styles'
  * @param map - A class map object for prefixing.
  * @returns A prefixed class name map.
  */
-export function namespace(prefix: string, map: ClassesMap): string {
+export function namespace(prefix: string, map: Record<string, boolean>): string {
     const result = {}
 
     for (const modifier in map) {
@@ -26,7 +25,7 @@ export function namespace(prefix: string, map: ClassesMap): string {
  * @param themes - The comma separated string.
  * @returns A class name map.
  */
-export function stringToMap(themes: string = ''): ClassesMap {
+export function stringToMap(themes: string = ''): Record<string, boolean> {
     const reducer = (prev: any, curr: string) => ({ ...prev, [curr]: true })
 
     if (themes === '') {
