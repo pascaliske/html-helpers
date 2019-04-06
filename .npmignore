@@ -1,5 +1,7 @@
 src
 tests
+.rpt2_cache
+.github
 .nyc_output
 .editorconfig
 .huskyrc
@@ -7,6 +9,7 @@ tests
 .prettierrc
 .snyk
 .travis.yml
+*.config.*
 *.code-*
 *.json
 *.lock

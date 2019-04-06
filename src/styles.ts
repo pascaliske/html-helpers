@@ -1,4 +1,4 @@
-import * as classNames from 'classnames'
+import classNames from 'classnames'
 import { namespace, stringToMap } from './helpers'
 
 export interface ClassesMap {
