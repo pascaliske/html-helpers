@@ -1,7 +1,7 @@
 import clear from 'rollup-plugin-clear'
 import typescript from 'rollup-plugin-typescript2'
 import { terser } from 'rollup-plugin-terser'
-import { module, main, dependencies, peerDependencies } from './package.json'
+import { module, main, dependencies } from './package.json'
 
 export default () => ({
     input: 'src/index.ts',
@@ -15,7 +15,7 @@ export default () => ({
             file: module,
         },
     ],
-    external: [...Object.keys(dependencies || {}), ...Object.keys(peerDependencies || {}), 'path'],
+    external: [...Object.keys(dependencies || {})],
     plugins: [
         clear({
             targets: ['dist'],
