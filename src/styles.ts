@@ -1,9 +1,5 @@
-import * as classNames from 'classnames'
+import classNames from 'classnames'
 import { namespace, stringToMap } from './helpers'
-
-export interface ClassesMap {
-    [key: string]: boolean
-}
 
 /**
  * Returns the final class string for the given class name maps.
@@ -11,8 +7,7 @@ export interface ClassesMap {
  * @param map -
  * @returns A class string
  */
-export function modifiers(map: ClassesMap): string
-
+export function modifiers(map: Record<string, boolean>): string
 /**
  * Returns the final class string for the given class name maps.
  *
@@ -20,8 +15,7 @@ export function modifiers(map: ClassesMap): string
  * @param map - A class name map.
  * @returns A class string
  */
-export function modifiers(namespace: string, map: ClassesMap): string
-
+export function modifiers(namespace: string, map: Record<string, boolean>): string
 /**
  * Returns the final class string for the given class name maps.
  *
@@ -30,11 +24,11 @@ export function modifiers(namespace: string, map: ClassesMap): string
  * @param map - A class name map.
  * @returns A class string
  */
-export function modifiers(namespace: string, themes: string, map: ClassesMap): string
+export function modifiers(namespace: string, themes: string, map: Record<string, boolean>): string
 export function modifiers(
-    namespaceOrMap: string | ClassesMap,
-    themesOrMap?: string | ClassesMap,
-    map?: ClassesMap,
+    namespaceOrMap: string | Record<string, boolean>,
+    themesOrMap?: string | Record<string, boolean>,
+    map?: Record<string, boolean>,
 ): string {
     if (!namespaceOrMap) {
         return ''
