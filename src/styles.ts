@@ -4,7 +4,7 @@ import { namespace, stringToMap } from './helpers'
 /**
  * Returns the final class string for the given class name maps.
  *
- * @param map -
+ * @param map - A map of class names and conditions.
  * @returns A class string
  */
 export function modifiers(map: Record<string, boolean>): string
@@ -12,7 +12,7 @@ export function modifiers(map: Record<string, boolean>): string
  * Returns the final class string for the given class name maps.
  *
  * @param namespace - A namespace for prepending.
- * @param map - A class name map.
+ * @param map - A map of class names and conditions.
  * @returns A class string
  */
 export function modifiers(namespace: string, map: Record<string, boolean>): string
@@ -21,7 +21,7 @@ export function modifiers(namespace: string, map: Record<string, boolean>): stri
  *
  * @param namespace - A namespace for prepending.
  * @param themes - A string of comma separated modifier classes.
- * @param map - A class name map.
+ * @param map - A map of class names and conditions.
  * @returns A class string
  */
 export function modifiers(namespace: string, themes: string, map: Record<string, boolean>): string

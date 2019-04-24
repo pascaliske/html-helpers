@@ -1,5 +1,6 @@
 src
 tests
+docs
 .rpt2_cache
 .github
 .nyc_output

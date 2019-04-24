@@ -1,18 +1,27 @@
 import clear from 'rollup-plugin-clear'
 import typescript from 'rollup-plugin-typescript2'
 import { terser } from 'rollup-plugin-terser'
-import { module, main, dependencies } from './package.json'
+import { module, main, browser, dependencies } from './package.json'
 
 export default () => ({
     input: 'src/index.ts',
     output: [
         {
+            format: 'es',
+            file: module,
+        },
+        {
             format: 'cjs',
             file: main,
         },
         {
-            format: 'es',
-            file: module,
+            format: 'umd',
+            file: browser,
+            name: 'htmlHelpers',
+            globals: {
+                tslib: 'tslib',
+                classnames: 'classNames',
+            },
         },
     ],
     external: [...Object.keys(dependencies || {})],
@@ -23,6 +32,10 @@ export default () => ({
         }),
         typescript({
             typescript: require('typescript'),
+            tsconfigOverride: {
+                exclude: ['rollup.config.ts'],
+            },
+            useTsconfigDeclarationDir: true,
         }),
         terser(),
     ],
