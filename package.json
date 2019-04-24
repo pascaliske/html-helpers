@@ -17,6 +17,7 @@
   },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
+  "browser": "dist/index.umd.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "rollup --config rollup.config.ts",
