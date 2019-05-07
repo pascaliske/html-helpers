@@ -1,3 +1,17 @@
+# [1.5.0](https://github.com/pascaliske/html-helpers/compare/v1.4.0...v1.5.0) (2019-05-07)
+
+
+### Bug Fixes
+
+* **styles:** map parameter should be optional ([5671c88](https://github.com/pascaliske/html-helpers/commit/5671c88))
+
+
+### Features
+
+* **styles:** add join function for joining array of class names to one class string ([10a2c3f](https://github.com/pascaliske/html-helpers/commit/10a2c3f))
+
+
+
 # [1.4.0](https://github.com/pascaliske/html-helpers/compare/v1.3.0...v1.4.0) (2019-04-24)
 
 
