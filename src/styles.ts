@@ -52,5 +52,5 @@ export function modifiers(
  * @returns A class string.
  */
 export function join(...classes: (string | string[])[]): string {
-    return [...new Set(flatDeep(classes))].join(' ')
+    return [...new Set(flatDeep(classes).filter(Boolean))].join(' ').trim()
 }

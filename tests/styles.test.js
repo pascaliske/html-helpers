@@ -104,3 +104,10 @@ test('join: returns an class string with multiple classes in arrays and duplicat
 
     t.is(result, expected)
 })
+
+test('join: returns an class string without empty strings', async t => {
+    const expected = 'foo'
+    const result = join('', false, 'foo', null)
+
+    t.is(result, expected)
+})
