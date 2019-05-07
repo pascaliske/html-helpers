@@ -9,6 +9,7 @@
     "declarationDir": "dist",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "downlevelIteration": true,
     "resolveJsonModule": true,
     "importHelpers": true,
     "typeRoots": [
@@ -16,7 +17,7 @@
       "node_modules/@types"
     ],
     "lib": [
-      "es2018",
+      "esnext",
       "dom"
     ]
   }
