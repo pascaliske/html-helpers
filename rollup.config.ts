@@ -32,10 +32,10 @@ export default () => ({
         }),
         typescript({
             typescript: require('typescript'),
+            useTsconfigDeclarationDir: true,
             tsconfigOverride: {
                 exclude: ['rollup.config.ts'],
             },
-            useTsconfigDeclarationDir: true,
         }),
         terser(),
     ],
