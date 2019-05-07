@@ -7,7 +7,7 @@ import { namespace, stringToMap } from './helpers'
  * @param map - A map of class names and conditions.
  * @returns A class string
  */
-export function modifiers(map: Record<string, boolean>): string
+export function modifiers(map?: Record<string, boolean>): string
 /**
  * Returns the final class string for the given class name maps.
  *
@@ -15,7 +15,7 @@ export function modifiers(map: Record<string, boolean>): string
  * @param map - A map of class names and conditions.
  * @returns A class string
  */
-export function modifiers(namespace: string, map: Record<string, boolean>): string
+export function modifiers(namespace: string, map?: Record<string, boolean>): string
 /**
  * Returns the final class string for the given class name maps.
  *
@@ -24,11 +24,11 @@ export function modifiers(namespace: string, map: Record<string, boolean>): stri
  * @param map - A map of class names and conditions.
  * @returns A class string
  */
-export function modifiers(namespace: string, themes: string, map: Record<string, boolean>): string
+export function modifiers(namespace: string, themes: string, map?: Record<string, boolean>): string
 export function modifiers(
     namespaceOrMap: string | Record<string, boolean>,
     themesOrMap?: string | Record<string, boolean>,
-    map?: Record<string, boolean>,
+    map: Record<string, boolean> = {},
 ): string {
     if (!namespaceOrMap) {
         return ''
