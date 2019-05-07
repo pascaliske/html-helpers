@@ -37,3 +37,19 @@ export function stringToMap(themes: string = ''): Record<string, boolean> {
         .split(',')
         .reduce(reducer, {})
 }
+
+/**
+ * Flattens a given array recursively.
+ *
+ * @param array - A array of arrays to flatten.
+ * @returns - Returns a flattened array of values.
+ */
+export function flatDeep<T = any>(array: (T | T[])[]): T[] {
+    return array.reduce<T[]>((result, current) => {
+        if (Array.isArray(current)) {
+            return result.concat(flatDeep(current))
+        } else {
+            return result.concat([current])
+        }
+    }, [])
+}
