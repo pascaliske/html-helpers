@@ -1,3 +1,12 @@
+## [1.5.1](https://github.com/pascaliske/html-helpers/compare/v1.5.0...v1.5.1) (2019-05-07)
+
+
+### Bug Fixes
+
+* **styles:** filter falsy values and trim resulting string ([30fe3bb](https://github.com/pascaliske/html-helpers/commit/30fe3bb))
+
+
+
 # [1.5.0](https://github.com/pascaliske/html-helpers/compare/v1.4.0...v1.5.0) (2019-05-07)
 
 
