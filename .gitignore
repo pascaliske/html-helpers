@@ -8,6 +8,7 @@ node_modules
 # misc
 typings
 .nyc_output
+.envrc
 npm-debug.log
 yarn-error.log
 
