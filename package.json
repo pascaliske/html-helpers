@@ -34,8 +34,8 @@
     "tslib": "^1.9.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.6.0",
-    "@commitlint/config-conventional": "^7.6.0",
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
     "@types/classnames": "^2.2.7",
     "ava": "^1.4.1",
     "husky": "^2.2.0",
@@ -44,7 +44,7 @@
     "prettier": "^1.17.0",
     "rollup": "^1.11.3",
     "rollup-plugin-clear": "^2.0.7",
-    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-terser": "^5.0.0",
     "rollup-plugin-typescript2": "^0.21.0",
     "snyk": "^1.161.1",
     "standard-changelog": "^2.0.11",
