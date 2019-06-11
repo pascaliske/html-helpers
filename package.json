@@ -1,7 +1,7 @@
 {
   "name": "@pascaliske/html-helpers",
   "description": "Collection of helper functions for HTML.",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "license": "MIT",
   "author": {
     "name": "Pascal Iske",
@@ -24,33 +24,33 @@
     "watch": "rollup --config rollup.config.ts --watch",
     "docs": "typedoc --mode modules --out docs/ --excludeNotExported --excludeExternals src/styles.ts",
     "lint": "tslint --project tsconfig.json --fix",
-    "test": "nyc ava tests/**/*.test.js",
+    "test": "nyc ava tests/*.test.js",
     "check": "snyk test",
     "format": "prettier --write \"src/**/*.ts\"",
     "changelog": "standard-changelog --release-count 1"
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "tslib": "^1.9.3"
+    "tslib": "^1.10.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
-    "@types/classnames": "^2.2.7",
-    "ava": "^1.4.1",
-    "husky": "^2.2.0",
-    "lint-staged": "^8.1.6",
-    "nyc": "^14.1.0",
-    "prettier": "^1.17.0",
-    "rollup": "^1.11.3",
+    "@types/classnames": "^2.2.8",
+    "ava": "^2.1.0",
+    "husky": "^2.4.0",
+    "lint-staged": "^8.2.0",
+    "nyc": "^14.1.1",
+    "prettier": "^1.18.2",
+    "rollup": "^1.14.6",
     "rollup-plugin-clear": "^2.0.7",
     "rollup-plugin-terser": "^5.0.0",
-    "rollup-plugin-typescript2": "^0.21.0",
-    "snyk": "^1.161.1",
+    "rollup-plugin-typescript2": "^0.21.1",
+    "snyk": "^1.174.2",
     "standard-changelog": "^2.0.11",
-    "tslint": "^5.16.0",
+    "tslint": "^5.17.0",
     "tslint-config-prettier": "^1.18.0",
     "typedoc": "^0.14.2",
-    "typescript": "^3.4.5"
+    "typescript": "^3.5.1"
   }
 }
