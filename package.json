@@ -1,7 +1,7 @@
 {
   "name": "@pascaliske/html-helpers",
   "description": "Collection of helper functions for HTML.",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "license": "MIT",
   "author": {
     "name": "Pascal Iske",
@@ -38,19 +38,19 @@
     "@commitlint/config-conventional": "^8.0.0",
     "@types/classnames": "^2.2.8",
     "ava": "^2.1.0",
-    "husky": "^2.4.0",
-    "lint-staged": "^8.2.0",
+    "husky": "^2.4.1",
+    "lint-staged": "^8.2.1",
     "nyc": "^14.1.1",
     "prettier": "^1.18.2",
-    "rollup": "^1.14.6",
+    "rollup": "^1.15.6",
     "rollup-plugin-clear": "^2.0.7",
     "rollup-plugin-terser": "^5.0.0",
-    "rollup-plugin-typescript2": "^0.21.1",
-    "snyk": "^1.174.2",
+    "rollup-plugin-typescript2": "^0.21.2",
+    "snyk": "^1.179.0",
     "standard-changelog": "^2.0.11",
     "tslint": "^5.17.0",
     "tslint-config-prettier": "^1.18.0",
     "typedoc": "^0.14.2",
-    "typescript": "^3.5.1"
+    "typescript": "^3.5.2"
   }
 }

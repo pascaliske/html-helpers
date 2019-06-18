@@ -1,6 +1,6 @@
 # Angular HTML Helpers
 
-[![Build Status](https://travis-ci.com/pascaliske/html-helpers.svg?branch=master)](https://travis-ci.com/pascaliske/html-helpers) [![Greenkeeper badge](https://badges.greenkeeper.io/pascaliske/html-helpers.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.com/pascaliske/html-helpers.svg?branch=master)](https://travis-ci.com/pascaliske/html-helpers) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=pascaliske/html-helpers)](https://dependabot.com)
 
 ## Installation
 
