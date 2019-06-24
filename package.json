@@ -38,7 +38,7 @@
     "@commitlint/config-conventional": "^8.0.0",
     "@types/classnames": "^2.2.8",
     "ava": "^2.1.0",
-    "husky": "^2.4.1",
+    "husky": "^2.5.0",
     "lint-staged": "^8.2.1",
     "nyc": "^14.1.1",
     "prettier": "^1.18.2",
