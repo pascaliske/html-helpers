@@ -36,6 +36,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
+    "@pascaliske/tsconfig": "^1.0.0",
     "@types/classnames": "^2.2.8",
     "ava": "^2.1.0",
     "husky": "^2.5.0",
