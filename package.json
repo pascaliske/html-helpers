@@ -1,7 +1,7 @@
 {
   "name": "@pascaliske/html-helpers",
   "description": "Collection of helper functions for HTML.",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "license": "MIT",
   "author": {
     "name": "Pascal Iske",
@@ -36,7 +36,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
-    "@pascaliske/tsconfig": "^1.0.2",
+    "@pascaliske/tsconfig": "^1.0.3",
     "@types/classnames": "^2.2.8",
     "ava": "^2.1.0",
     "husky": "^2.7.0",
