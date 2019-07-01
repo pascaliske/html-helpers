@@ -43,7 +43,7 @@
     "lint-staged": "^8.2.1",
     "nyc": "^14.1.1",
     "prettier": "^1.18.2",
-    "rollup": "^1.16.2",
+    "rollup": "^1.16.3",
     "rollup-plugin-clear": "^2.0.7",
     "rollup-plugin-terser": "^5.0.0",
     "rollup-plugin-typescript2": "^0.21.2",
