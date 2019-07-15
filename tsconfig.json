@@ -10,5 +10,6 @@
       "esnext",
       "dom"
     ]
-  }
+  },
+  "include": ["src/**/*.ts"]
 }
