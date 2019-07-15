@@ -1,12 +1,13 @@
 # compiled output
 dist
-.rpt2_cache
+coverage
 
 # dependencies
 node_modules
 
 # misc
 typings
+.rpt2_cache
 .nyc_output
 .envrc
 npm-debug.log
