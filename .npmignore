@@ -1,9 +1,9 @@
 src
 tests
 docs
+coverage
 .rpt2_cache
 .github
-.nyc_output
 .editorconfig
 .huskyrc
 .lintstagedrc
