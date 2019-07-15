@@ -8,10 +8,8 @@ node_modules
 # misc
 typings
 .rpt2_cache
-.nyc_output
 .envrc
-npm-debug.log
-yarn-error.log
+*.log
 
 # system files
 .DS_Store
