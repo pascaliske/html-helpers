@@ -24,7 +24,7 @@
     "watch": "rollup --config rollup.config.ts --watch",
     "docs": "typedoc --mode modules --out docs/ --excludeNotExported --excludeExternals src/styles.ts",
     "lint": "tslint --project tsconfig.json --fix",
-    "test": "ava tests/*.test.js",
+    "test": "nyc ava tests/*.test.js",
     "coverage": "mkdirp coverage && nyc report --reporter=json > coverage/coverage.json && codecov",
     "check": "snyk test",
     "format": "prettier --write \"src/**/*.ts\"",
