@@ -1,16 +1,15 @@
 # compiled output
 dist
-.rpt2_cache
+coverage
 
 # dependencies
 node_modules
 
 # misc
 typings
-.nyc_output
+.rpt2_cache
 .envrc
-npm-debug.log
-yarn-error.log
+*.log
 
 # system files
 .DS_Store

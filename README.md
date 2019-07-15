@@ -1,6 +1,6 @@
 # Angular HTML Helpers
 
-[![Build Status](https://travis-ci.com/pascaliske/html-helpers.svg?branch=master)](https://travis-ci.com/pascaliske/html-helpers) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=pascaliske/html-helpers)](https://dependabot.com)
+[![Build Status](https://travis-ci.com/pascaliske/html-helpers.svg?branch=master)](https://travis-ci.com/pascaliske/html-helpers) [![codecov](https://codecov.io/gh/pascaliske/html-helpers/branch/master/graph/badge.svg)](https://codecov.io/gh/pascaliske/html-helpers) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=pascaliske/html-helpers)](https://dependabot.com)
 
 ## Installation
 
