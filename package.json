@@ -48,7 +48,7 @@
     "rollup": "^1.17.0",
     "rollup-plugin-clear": "^2.0.7",
     "rollup-plugin-terser": "^5.1.1",
-    "rollup-plugin-typescript2": "^0.22.0",
+    "rollup-plugin-typescript2": "^0.22.1",
     "snyk": "^1.200.1",
     "standard-changelog": "^2.0.11",
     "ts-jest": "^24.0.2",
