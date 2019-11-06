@@ -52,7 +52,7 @@
     "snyk": "^1.243.0",
     "standard-changelog": "^2.0.15",
     "ts-jest": "^24.1.0",
-    "tslint": "^6.0.0-beta0",
+    "tslint": "^6.0.0-beta1",
     "tslint-config-prettier": "^1.18.0",
     "typedoc": "^0.15.0",
     "typescript": "^3.7.2"
