@@ -51,7 +51,7 @@
     "rollup-plugin-typescript2": "^0.24.3",
     "snyk": "^1.251.0",
     "standard-changelog": "^2.0.18",
-    "ts-jest": "^24.1.0",
+    "ts-jest": "^24.2.0",
     "tslint": "^6.0.0-beta1",
     "tslint-config-prettier": "^1.18.0",
     "typedoc": "^0.15.2",
