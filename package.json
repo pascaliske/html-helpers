@@ -35,7 +35,7 @@
     "tslib": "^1.10.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.3",
+    "@commitlint/cli": "^8.3.4",
     "@commitlint/config-conventional": "^8.3.3",
     "@pascaliske/prettier-config": "^1.0.2",
     "@pascaliske/tsconfig": "^1.0.4",
