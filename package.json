@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.3",
-    "@commitlint/config-conventional": "^8.2.0",
+    "@commitlint/config-conventional": "^8.3.3",
     "@pascaliske/prettier-config": "^1.0.2",
     "@pascaliske/tsconfig": "^1.0.4",
     "@types/classnames": "^2.2.9",
