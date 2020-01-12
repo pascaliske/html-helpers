@@ -57,7 +57,7 @@
     "ts-jest": "^24.3.0",
     "tslint": "^6.0.0-beta1",
     "tslint-config-prettier": "^1.18.0",
-    "typedoc": "^0.15.8",
+    "typedoc": "^0.16.1",
     "typescript": "^3.7.4"
   }
 }
