@@ -30,6 +30,7 @@
     "version": "bump --yes package.json",
     "changelog": "standard-changelog"
   },
+  "prettier": "@pascaliske/prettier-config",
   "dependencies": {
     "classnames": "^2.2.6",
     "tslib": "^1.10.0"
