@@ -43,7 +43,7 @@
     "@types/classnames": "^2.2.9",
     "@types/jest": "^24.9.0",
     "bump-cli": "^1.1.3",
-    "codecov": "^3.6.1",
+    "codecov": "^3.6.2",
     "expect": "^25.1.0",
     "husky": "^4.2.0",
     "jest": "^24.9.0",
