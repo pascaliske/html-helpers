@@ -7,7 +7,6 @@ script:
   - yarn run build
   - yarn run lint
   - yarn run test
-  - yarn run check
 deploy:
   provider: npm
   email: info@pascal-iske.de
@@ -18,9 +17,6 @@ deploy:
     tags: true
     branch: master
     node: 13
-env:
-  global:
-    - secure: Ugcvy60xS+L/aan1zFoJDrgpsYEQcc+1hZce8nXon19FrbKymooXVlvrkAy0sRxrcsNBUpTG6jIKikAxsHAAsM/kP5J8WKV5Duu70RnAP+uMoJcgNnzJtu5qEAobxZ3VRCWfB4G+lDYkOxKqcob7wrkeGrEqrbC344BY0BrXHWcGk+gY/EiuWMDruDFZFPuksD7FV4y1h+qcCx5Yto1NhHJ3vZXIYpy2Kqrnkr/OKHg53N8S9R45eLzNFNse/h5ja2GzVrwVkBNNX2XnYXl/F61dnQ+v7UzInMJcBgifHleY7Ps3wKsc+gLEYJydhCZD/YAHdizdZFIxYjytFscHKrMMozbkCdOVzsBfN0i0LzOrVDhrX1lpfJ0Yh/Ly0oI7AZg+C87IMWNeg/vTsqhUIcIi61TWoAIx8J+RW7DrMSEs5rrTDipHwRez1zrG6hJBj8WSSYa+mC2rk2HcPa1Jv+jod+/uk3/F2Bdck1vaiW2gIluSAlWwMJq6cOMlJJwlhQArZMYg4hgYUpJ5x1oYMOIX+pNukCDufRkepDo5ASfx5rIyWEi4cgVnjmXGZlyRi1+Mus2YqB7GQ4air2nj0CUuDg5CTcZ4KYHpDBARDxKnZMTqCm9n4WN2w59eniHJIUTyD8F0jue9V76foI3z0KUg+hWOgyIlCejN8lYUGUQ=
 notifications:
   slack:
     secure: MeMFT9uhC2UdzZaEjXiloK/yHRlB2Q5k5/gPbxmJim09v7bzu0dEdusNpWuwbZJY13KXF+pXh1UPa1ICuI/GogQ7+waUldsTE7qCWDxyOAPsZIffPvJLlX4Xnkcod/QaJL1xmb9lgqxMy1jUh0gI3qGmqQ5ZQpWTkQtlnoSoQvJd3FqA1MqVl2WvzUq4ok6rAfM29oX1oVGY3Eo/pvaCms0EyL5HZzYSTYe3mUt1lagT7W2pg9IaEyf1rgHIoReoIsL9RRsu2Luj1XJd4rR1+kR3G3ndmcs5s6XtJK+XpworMEwDjSb1y+gl2FQAhwzqvGW+A7k2u7smENtp9r8qr42T7hVB5hRj4IVnuV3VRG/TLGtQ5YTdMKzV4+IUOfXlZtKKTKxhTG36E1nlSaXs9HQcHwbCguPjYf2wDdDoe5GcaJubStCWVCVgBATg5/A7dUfbTaFfxksVNPNy7yID9n04L8N0kyHljaWOs6VHLnIoTNWRRRitsRBaydwMtIZB6ikijSwqp1WSwKvB8mHCpktB4IWLhhURRtIVY7SP/efHXwIMSM25izOKmRneLIJjiTGxNSAgWvmOTWYAgVEofsXGHEvgQPIqAx177cHv6oWJHS4WpxJACsXarMzwDzHeEbfUPelOc6Vae+zuphtnbsjHfp+pePuZk0w1NEDVJwc=
