@@ -53,7 +53,7 @@
     "rollup-plugin-terser": "^5.3.0",
     "rollup-plugin-typescript2": "^0.27.0",
     "standard-changelog": "^2.0.24",
-    "ts-jest": "^25.5.0",
+    "ts-jest": "^25.5.1",
     "tslint": "^6.1.2",
     "tslint-config-prettier": "^1.18.0",
     "typedoc": "^0.17.6",
