@@ -23,7 +23,7 @@
     "prepare": "husky install",
     "build": "rollup --config rollup.config.ts",
     "watch": "rollup --config rollup.config.ts --watch",
-    "docs": "typedoc --mode modules --out docs/ --excludeNotExported --excludeExternals src/styles.ts",
+    "docs": "typedoc --out docs/ --excludeExternals src/styles.ts",
     "lint": "tslint --project tsconfig.json --fix",
     "test": "jest --config jest.config.json --coverage && codecov",
     "format": "prettier --write \"src/**/*.ts\"",
