@@ -1,12 +1,12 @@
 {
   "name": "@pascaliske/html-helpers",
   "description": "Collection of helper functions for HTML.",
-  "version": "1.5.8",
+  "version": "1.5.9",
   "license": "MIT",
   "author": {
     "name": "Pascal Iske",
-    "email": "info@pascal-iske.de",
-    "url": "https://pascal-iske.de"
+    "email": "info@pascaliske.dev",
+    "url": "https://pascaliske.dev"
   },
   "repository": {
     "url": "https://github.com/pascaliske/html-helpers.git",
@@ -20,45 +20,44 @@
   "browser": "dist/index.umd.js",
   "typings": "dist/index.d.ts",
   "scripts": {
+    "prepare": "husky install",
     "build": "rollup --config rollup.config.ts",
     "watch": "rollup --config rollup.config.ts --watch",
-    "docs": "typedoc --mode modules --out docs/ --excludeNotExported --excludeExternals src/styles.ts",
+    "docs": "typedoc --out docs/ --excludeExternals src/styles.ts",
     "lint": "tslint --project tsconfig.json --fix",
     "test": "jest --config jest.config.json --coverage && codecov",
-    "check": "snyk test",
     "format": "prettier --write \"src/**/*.ts\"",
     "version": "bump --yes package.json",
     "changelog": "standard-changelog"
   },
   "prettier": "@pascaliske/prettier-config",
   "dependencies": {
-    "classnames": "^2.2.6",
-    "tslib": "^1.11.1"
+    "classnames": "^2.3.1",
+    "tslib": "^2.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
-    "@pascaliske/prettier-config": "^1.0.2",
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "@pascaliske/prettier-config": "^1.1.1",
     "@pascaliske/tsconfig": "^1.0.4",
-    "@types/classnames": "^2.2.10",
-    "@types/jest": "^25.1.4",
+    "@types/classnames": "^2.3.1",
+    "@types/jest": "^26.0.23",
     "bump-cli": "^1.1.3",
-    "codecov": "^3.6.5",
-    "expect": "^25.1.0",
-    "husky": "^4.2.3",
-    "jest": "^25.1.0",
-    "lint-staged": "^10.0.9",
-    "prettier": "^2.0.2",
-    "rollup": "^2.1.0",
+    "codecov": "^3.8.1",
+    "expect": "^26.6.2",
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "rollup": "^2.46.0",
     "rollup-plugin-clear": "^2.0.7",
-    "rollup-plugin-terser": "^5.3.0",
-    "rollup-plugin-typescript2": "^0.26.0",
-    "snyk": "^1.303.1",
-    "standard-changelog": "^2.0.21",
-    "ts-jest": "^25.2.1",
-    "tslint": "^6.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "standard-changelog": "^2.0.27",
+    "ts-jest": "^26.5.5",
+    "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
-    "typedoc": "^0.17.3",
-    "typescript": "^3.8.3"
+    "typedoc": "^0.20.36",
+    "typescript": "^4.2.4"
   }
 }

@@ -1,6 +1,6 @@
 # Angular HTML Helpers
 
-[![Build Status](https://travis-ci.com/pascaliske/html-helpers.svg?branch=master)](https://travis-ci.com/pascaliske/html-helpers) [![codecov](https://codecov.io/gh/pascaliske/html-helpers/branch/develop/graph/badge.svg)](https://codecov.io/gh/pascaliske/html-helpers) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=pascaliske/html-helpers)](https://dependabot.com)
+[![Build Status](https://img.shields.io/github/workflow/status/pascaliske/html-helpers/Test%20package/master?label=test&style=flat-square)](https://github.com/pascaliske/html-helpers/actions) [![codecov](https://codecov.io/gh/pascaliske/html-helpers/branch/develop/graph/badge.svg)](https://codecov.io/gh/pascaliske/html-helpers) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=pascaliske/html-helpers)](https://dependabot.com)
 
 ## Installation
 
@@ -74,4 +74,4 @@ In your `HTML` code:
 
 ## License
 
-MIT © [Pascal Iske](https://pascal-iske.de)
+MIT © [Pascal Iske](https://pascaliske.dev)
