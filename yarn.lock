@@ -747,15 +747,15 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@pascaliske/prettier-config@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@pascaliske/prettier-config/-/prettier-config-1.1.1.tgz#69297e36c7f735b446a0fbde4e0567254186d4c2"
-  integrity sha512-S8yr8oTBakOYu5aLRD9F/RtQq0i/8jVJ22iJKe5ow3cYs2su4maF16HlDaIxm01dTfnUB0/jaVcAXlOmwF004A==
+"@pascaliske/prettier-config@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@pascaliske/prettier-config/-/prettier-config-1.1.2.tgz#3da84166ffe399c85c0210b8f29cd28c6b01bf76"
+  integrity sha512-mQvCGQVBC9uopeueA15TlFbBu9ycP5kl+0Hj4ga20ly0P866yTT+4HSlc/fs7j/l21XwPluNnLVCzicr6ylMSQ==
 
-"@pascaliske/tsconfig@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@pascaliske/tsconfig/-/tsconfig-1.0.5.tgz#f220889ea651104fb3e38e32865f55d6e2959059"
-  integrity sha512-XNWay16kStpr7nSVFDyB/LBVaALBdKb2AQmj55d3Z2d4pN6esuxCm367MFHGBcmsXhFPvQzx8uqDpZUhVAm7/w==
+"@pascaliske/tsconfig@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@pascaliske/tsconfig/-/tsconfig-1.0.6.tgz#9a4a99f6ee44b5df548e6b9da4a69aa0278743b2"
+  integrity sha512-zkHui7NyprhAaaQWRppWXxQfkIFZu+WyhQYlQt9W95ganFyUWCJdaXHNhInmy5NkuD3hoRukGiFLRVxyFHJrKg==
 
 "@rollup/pluginutils@^4.1.0":
   version "4.1.0"
