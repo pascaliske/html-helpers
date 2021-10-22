@@ -42,7 +42,7 @@
     "@pascaliske/tsconfig": "^1.0.6",
     "@rstacruz/bump-cli": "^2.0.0",
     "@types/classnames": "^2.3.1",
-    "@types/jest": "^26.0.24",
+    "@types/jest": "^27.0.2",
     "codecov": "^3.8.2",
     "expect": "^27.3.1",
     "husky": "^6.0.0",
