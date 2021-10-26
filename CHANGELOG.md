@@ -1,3 +1,7 @@
+## [1.5.11](https://github.com/pascaliske/html-helpers/compare/v1.5.10...v1.5.11) (2021-10-26)
+
+
+
 ## [1.5.10](https://github.com/pascaliske/html-helpers/compare/v1.5.9...v1.5.10) (2021-05-25)
 
 
