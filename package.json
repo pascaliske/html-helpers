@@ -47,7 +47,7 @@
     "expect": "^28.1.0",
     "husky": "^8.0.1",
     "jest": "^27.5.1",
-    "lint-staged": "^12.4.3",
+    "lint-staged": "^13.0.0",
     "prettier": "^2.6.2",
     "rollup": "^2.75.4",
     "rollup-plugin-clear": "^2.0.7",
