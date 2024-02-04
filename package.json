@@ -20,7 +20,7 @@
   "browser": "dist/index.umd.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
     "watch": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript --watch",
     "docs": "typedoc --out docs/ --excludeExternals src/styles.ts",
@@ -46,7 +46,7 @@
     "@types/jest": "^29.0.0",
     "codecov": "^3.8.3",
     "expect": "^29.2.2",
-    "husky": "^8.0.1",
+    "husky": "^9.0.10",
     "jest": "^29.0.0",
     "lint-staged": "^15.0.0",
     "prettier": "^3.0.0",
